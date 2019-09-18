@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common'
+import { Controller, Get, Post, Body } from '@nestjs/common'
 import { AppService } from './app.service'
 
 @Controller()
@@ -11,4 +11,13 @@ export class AppController {
     const result = this.appService.getTrainingData()
     return result
   }
+
+  @Post('addTrainingData')
+  public addTrainingData(@Body() entry): any {
+    this.appService.addTrainingData(entry)
+
+    return {status: 'success'}
+
+  }
+
 }

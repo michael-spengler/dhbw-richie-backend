@@ -10,5 +10,6 @@
   {
     "input": "Was ist TSLint?",
     "output": "TSLint ist ein Werkzeug für statische Code Checks."
-  }
+  },
+  { "input": "up", "output": "ups" }
 ]
