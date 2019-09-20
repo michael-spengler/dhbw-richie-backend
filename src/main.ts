@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core'
 import { AppModule } from './app.module'
 import * as fs from 'fs'
+import cors = require('cors')
 
 async function bootstrap() {
   const httpsOptions: any = {
@@ -13,6 +14,7 @@ async function bootstrap() {
   })
   // await app.listen(3000)
   // await app.listen(80)
+  app.use(cors('https://dhbw-richie.de'))
   await app.listen(443)
 }
 bootstrap()

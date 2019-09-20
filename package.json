@@ -25,6 +25,7 @@
     "@nestjs/platform-express": "^6.0.0",
     "configuration-reader": "^1.0.6",
     "fs-sync": "^1.0.6",
+    "node-nlp": "^3.9.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.3.3",
